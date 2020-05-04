@@ -1,0 +1,57 @@
+body {height:100%;width:100%;margin:0;padding:0;overflow:hidden;font-family: Helvetica, Arial, sans-serif;font-size:12px;font-weight:100;color: #706F6F;background-color: #EEEBE5;}
+
+#container {width:100%;	height:100%;position:absolute;top:0;left:0;overflow:hidden;}
+
+a, a:hover, a:visited, a:active {color:inherit;text-decoration:none;z-index: 1000;}
+p {font-size: 1em;line-height: 1.2; letter-spacing: 0.1em;margin: 10px 25px;}
+
+#menuWrapper {z-index: 1000;width: 120px;left: 65px; top: 0;position: fixed;color: #1D1D1D;}
+#menuLogo {height: 280px;padding: 50px 10px 0px;background-color: #FDC400;}
+#menuLogo h1 {text-transform:uppercase;font-weight:600;font-size:1.1em;line-height:1.2;	margin-top:25px;}
+#menu li {width:90px;list-style:none;margin:10px 0 10px;background-color:#ffffff;text-transform:uppercase;font-size:0.9em;line-height:1.2;padding:5px 15px 2px;}
+
+#beta {background-color: #FDC400; width: 120px; height: 40px; clear: both; left:65px; bottom: 0; position: fixed;}
+#beta h1 {text-transform:uppercase;font-weight:600;font-size:1.1em;line-height:1.2;	margin-top:15px; margin-left: 40px;}
+
+#contentWrapper {margin:0 auto;position:relative;}
+
+.selected {font-weight:700;}
+.clear {clear:both;}
+.title {background-color:#ffffff;width:130px;float:right;margin-bottom:10px;padding:5px 5px 5px 10px;font-size:1.3em;font-weight:500;text-transform:uppercase;clear: both;}
+.left {width: 300px;height: 450px;margin-right: 10px;border: 5px solid #ffffff;float: left;clear: both;}
+.right {width: 270px;height: 455px;margin-left: 10px;border-top: 5px solid #FBB800;float: left;background-color: #ffffff;}
+.item {width:100%;height:100%;float:left;margin:0 auto;}
+.content {width:600px;height:500px;position:relative;margin:5% auto;}
+.journey {z-index:1; color:#FF5252;text-transform: uppercase;position: relative;}
+
+#welcome {position:relative;}
+#welcome .content {width: 700px; height: 600px;}
+#welcome p {text-transform:uppercase;color:#E42313;padding-left:500px;margin-top: -30px;}
+
+#ourStory {margin-top:50px;margin-left:1150px;position:relative;}
+#ourStory .right h1{font-weight: 500;font-size: 1.5em;line-height: 1.2;letter-spacing: 0.1em;margin: 15px 15px 15px 25px;color: #B2B2B2;}
+
+#whyDali {margin-left: 2150px; margin-top: -230px;position: relative;}
+#whyDali .right h1 {font-weight: 500;font-size: 1.7em;line-height: 1.2;letter-spacing: 0.1em;margin: 15px 25px;color: #B2B2B2;}
+
+#daliMoment {margin-left: 2400px; margin-top: 300px; position: relative;}
+#daliMoment .right h1 {font-weight: 500;font-size: 1.7em;line-height: 1.2;letter-spacing: 0.1em;margin: 15px 25px;color: #B2B2B2;}
+/*#daliMoment #daliMomentSlider img {margin-left: 50px; margin-top: 25px;}*/
+
+#ourHeritage {margin-left:1400px;margin-top:70px;position: relative;}
+
+#products {margin-left:430px; margin-top:-250px;  position:relative;}
+#products .left {width: 340px;margin-right:10px; border:0; background-color:#F4F0EE;}
+#products .right {width: 240px;margin-left:10px; border:0;	background: none;}
+#products #title {height: 13px;color: #ffffff; text-transform:uppercase; padding: 30px 25px;margin-bottom: 15px;font-size: 2em;font-weight: 600;letter-spacing: 2px;}
+#products .copy {background-color: #ffffff;	height: 415px;}
+#products .copy h1 {padding: 25px 25px 0;font-style: italic;font-size: 1.3em;}
+#products .copy h2 {padding: 5px 25px 0;font-style: italic;font-size: 1.3em;}
+
+#contact {margin-left: 1500px; margin-top: -90px; margin-bottom:100px; position: relative;}
+#contact .left {background-color:#ffffff;}
+#contact .right h1{font-weight: 500;font-size: 1.7em;line-height: 1.2;letter-spacing: 0.1em;margin: 15px 0 15px 25px;color: #B2B2B2;}
+
+.bx-prev{margin-left: 480px;margin-top: -30px;position: absolute;}
+.bx-next {margin-left: 550px;position: absolute;margin-top: -30px;}
+.bx-pager.bx-default-pager {z-index: 1000;}

@@ -55,5 +55,9 @@ p {font-size: 1em;line-height: 1.2; letter-spacing: 0.1em;margin: 10px 25px;}
 .bx-prev{margin-left: 480px;margin-top: -30px;position: absolute;}
 .bx-next {margin-left: 550px;position: absolute;margin-top: -30px;}
 .bx-pager.bx-default-pager {z-index: 1000;}
-#ourStory ul {margin: 10px 25px;}
-#ourStory ul li {margin-bottom: 5px;}
+#ourStory ul, #heritageSlider ul {margin: 10px 25px;}
+#ourStory ul li, #heritageSlider ul li {margin-bottom: 5px;}
+#ourStory ul li b{font-weight: bold;}
+i {
+	font-style: italic;
+}

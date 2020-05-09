@@ -62,3 +62,18 @@ ul li {margin-bottom: 5px;}
 i {font-style: italic;}
 b {font-weight: bold;}
 .overflow-scroll {overflow: scroll;}
+.bullet li{margin-left: 10px;position: relative;}
+.bullet li:before{
+	content: '•';
+	position: absolute;
+	left: -10px;
+}
+.tick {
+	position: relative;
+	margin-left: 20px!important;
+}
+.tick:before{
+	content: '\2713';
+    position: absolute;
+    left: -15px;
+}

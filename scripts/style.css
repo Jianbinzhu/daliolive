@@ -57,7 +57,6 @@ p {font-size: 1em;line-height: 1.2; letter-spacing: 0.1em;margin: 10px 25px;}
 .bx-next {margin-left: 550px;position: absolute;margin-top: -30px;}
 .bx-pager.bx-default-pager {z-index: 1000;}
 #ourStory ul, #heritageSlider ul {margin: 10px 25px;}
-#heritageSlider .left {border:0;margin-right: 0;width: 297.5px;}
 ul li {margin-bottom: 5px;}
 #ourStory ul li b{font-weight: bold;}
 i {font-style: italic;}

@@ -6,7 +6,7 @@ a, a:hover, a:visited, a:active {color:inherit;text-decoration:none;z-index: 100
 p {font-size: 1em;line-height: 1.2; letter-spacing: 0.1em;margin: 10px 25px;}
 
 #menuWrapper {z-index: 1000;width: 120px;left: 65px; top: 0;position: fixed;color: #1D1D1D;}
-#menuLogo {height: 335px;background-color: #FDC400;}
+#menuLogo {height: 335px;background-color: #FDC400; position: relative;}
 #menuLogo h1 {text-transform:uppercase;font-weight:600;font-size:1.1em;line-height:1.2;	margin-top:25px;}
 #menu li {width:90px;list-style:none;margin:10px 0 10px;background-color:#ffffff;text-transform:uppercase;font-size:0.9em;line-height:1.2;padding:5px 15px 2px;}
 
@@ -92,7 +92,21 @@ b {font-weight: bold;}
 	font-weight: 700;
 }
 
+.nav_text {
+    position: absolute;
+    left: 0;
+    width: calc(100% - 20px);
+    bottom: 0px;
+    padding: 10px;
+    font-weight: 400;
+}
+
 @media (max-width: 736px) {
+	.nav_text {
+	    font-size: 10px;
+	    line-height: 12px;
+    	padding: 5px 10px;
+	}
 	#menuWrapper {
 	    left: 0;
 	    width: 100px;

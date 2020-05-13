@@ -136,6 +136,7 @@ b {font-weight: bold;}
 		margin-left: 0;
 		height: unset;
 		margin-right: 0;
+		overflow: hidden;
 	} 
 	.right img,
 	.left img {
@@ -168,13 +169,18 @@ b {font-weight: bold;}
 		padding-left: 0;
 		margin-top: 0;
 		position: absolute;
-	    bottom: 10%;
+	    bottom: 25%;
 	    left: 50%;
 	}
 
 	.bx-wrapper .bx-pager {
-	    bottom: 54%!important;
+	    top: 45%!important;
 	    left: 14%;
+	    height: 10px;
+	}
+
+	#daliMoment .bx-wrapper .bx-pager {
+		bottom: 0%!important;
 	}
 
 	.bx-wrapper {

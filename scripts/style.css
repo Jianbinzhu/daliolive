@@ -85,6 +85,13 @@ b {font-weight: bold;}
 	display: none;
 }
 
+#menu ul li a {
+	font-weight: 400;
+}
+#menu ul li a.selected { 
+	font-weight: 700;
+}
+
 @media (max-width: 736px) {
 	#menuWrapper {
 	    left: 0;

@@ -113,7 +113,7 @@ b {font-weight: bold;}
 	#welcome .content img{
 	    width: calc(100% - 40px);
 	    left: 65px;
-	    top: 50%;
+	    top: 40%;
 	    position: absolute;
 	    transform: translateY(-50%);
 	}

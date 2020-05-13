@@ -184,6 +184,10 @@ b {font-weight: bold;}
 		top: unset!important;
 	}
 
+	#products .bx-wrapper .bx-pager {
+		top: 430px!important;
+	}
+
 	.bx-wrapper {
 		overflow: hidden;
 	    width: 100%;
@@ -191,5 +195,20 @@ b {font-weight: bold;}
 
 	#ourHeritage .right {
 		padding-top: 20px;
+	}
+
+	.mobile-start {
+		position: relative;
+	}
+
+	.mobile-start::after {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background-color: #E42313;
+		border-radius: 50px;
+		top: calc(100% + 10px);
+	    left: 50%;
 	}
 }

@@ -114,11 +114,14 @@ b {font-weight: bold;}
 @media (max-width: 736px) {
 	.award-container {
 		right: unset;
-		left: 0;
+		left: 5px;
 		display: flex;
 		flex-direction: column;
 		bottom: unset;
 		top: 70%;
+	}
+	.award-container img{
+		width: 90px;
 	}
 	.nav_text {
 	    font-size: 10px;

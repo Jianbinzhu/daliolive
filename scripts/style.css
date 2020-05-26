@@ -103,25 +103,41 @@ b {font-weight: bold;}
 
 .award-container {
 	position: absolute;
-	right: calc(100% + 10px); 
-	bottom: 0;
+	right: calc(100% + 10px);
+	text-align: center;
+	top: 55%;
+	transform: translateY(-50%);
 }
 
 .award-container img{
 	width: 100px;
+	margin-bottom: 15px;
+}
+.award-container img.twofive {
+	width: 60px;
+	margin-bottom: 0;
+}
+.award-container img.awardwinning {
+	display: block;
 }
 
 @media (max-width: 736px) {
+	.award-container img.awardwinning {
+		display: none;
+	}
 	.award-container {
 		right: unset;
 		left: 5px;
 		display: flex;
 		flex-direction: column;
 		bottom: unset;
-		top: 70%;
+		top: 72.5%;
 	}
 	.award-container img{
 		width: 90px;
+	}
+	.award-container img.twofive {
+		margin-left: 15px;
 	}
 	.nav_text {
 	    font-size: 10px;
@@ -133,9 +149,9 @@ b {font-weight: bold;}
 	    width: 100px;
 	}
 	#menu li {
-		width: 60px;
-	    margin: 10px 0;
-	    padding: 5px 20px;
+	    width: 80px;
+	    margin: 5px 0;
+	    padding: 2.5px 10px;
 	}
 	#menuLogo {
 		height: unset;

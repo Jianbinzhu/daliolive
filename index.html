@@ -24,8 +24,8 @@
 
       $('a.panel').click(function () {
         $('a.panel').removeClass('selected');
-        $(this).addClass('selected');
-        current = $(this);
+        var select = $(this).data('menu');
+        $('.panel-' + select).addClass('selected');
         $('#container').scrollTo($(this).attr('href'), 1100);
         return false;
       });
@@ -67,12 +67,13 @@
             <b>Martinborough</b></span></a></div>
       <div id="menu" class="panel">
         <ul>
-          <li><a href="#ourStory" class="panel">essential to taste</a></li>
-          <li><a href="#whyDali" class="panel">super premium</a></li>
-          <li><a href="#daliMoment" class="panel">dali</a></li>
-          <li><a href="#ourHeritage" class="panel">us</a></li>
-          <li><a href="#products" class="panel">your dali</a></li>
-          <li><a href="#contact" class="panel">contact</a></li>
+          <li><a href="#intro" class="panel panel-intro" data-menu="intro">intro</a></li>
+          <li><a href="#ourStory" class="panel panel-essential" data-menu="essential">essential to taste</a></li>
+          <li><a href="#whyDali" class="panel panel-super" data-menu="super">super premium</a></li>
+          <li><a href="#daliMoment" class="panel panel-dali" data-menu="dali">dali</a></li>
+          <li><a href="#ourHeritage" class="panel panel-us" data-menu="us">us</a></li>
+          <li><a href="#products" class="panel panel-your-dali" data-menu="your-dali">your dali</a></li>
+          <li><a href="#contact" class="panel panel-contact" data-menu="contact">contact</a></li>
           <li><a href="http://daliolives.tumblr.com" target="_blank">blogs</a></li>
         </ul>
       </div>
@@ -86,11 +87,9 @@
         <div class="content">
           <img src="pics/homepage.png" />
           <div class="journey">
-            <a href="#intro" class="panel">
-              <p>Intro</p>
-            </a>
+            <p><a href="#intro" class="panel" data-menu="intro">Intro</a></p>
             <img src="pics/welcome-ourStory.png" class="ml550" style="margin-top: 10px;" />
-            <a href="#welcome" class="panel">
+            <a href="#welcome" class="panel" data-menu="intro">
               <p style="margin-left: 570px; margin-top: 20px;">back</p>
             </a>
             <img src="pics/superior.png" style="margin-left: 600px;" />
@@ -107,11 +106,11 @@
             <source src="videos/Dali-Olives.mp4" type="video/mp4">
           </video>
           <p class="start desktop-hide">
-            <a href="#ourStory" class="panel mobile-start">Start The <br>Dali Journey</a>
+            <a href="#ourStory" class="panel mobile-start" data-menu="essential">Start The <br>Dali Journey</a>
           </p>
-          <a href="#ourStory" class="panel">
-            <p>Start The<br>Dali Journey</p>
-          </a>
+          <p style="color: #FF5252;"><a href="#ourStory" class="panel" data-menu="essential">Start The<br>Dali
+              Journey</a></p>
+
         </div>
       </div>
       <div id="clear"></div>
@@ -179,11 +178,11 @@
             </div>
           </div>
           <div class="journey">
-            <a href="#whyDali" class="panel">
+            <a href="#whyDali" class="panel" data-menu="super">
               <p style="margin-left: 630px; margin-top: 270px;">next</p>
             </a>
             <img src="pics/ourStory-whyDali.png" class="mobile-hide" style="margin-left: 680px; margin-top: -300px;" />
-            <a href="#ourStory" class="panel">
+            <a href="#ourStory" class="panel" data-menu="essential">
               <p style="margin-left: 1695px;">back</p>
             </a>
           </div>
@@ -216,11 +215,11 @@
           </div>
           <div class="journey">
             <img src="pics/oil.png" style="margin-left:650px; margin-top:-150px;">
-            <a href="#daliMoment" class="panel">
+            <a href="#daliMoment" class="panel" data-menu="dali">
               <p style="margin-left:100px; margin-top:-10px;">next</p>
             </a>
             <img src="pics/whyDali-daliMoment.png" style="margin-left:105px;" />
-            <a href="#whyDali" class="panel">
+            <a href="#whyDali" class="panel" data-menu="super">
               <p style="margin-left:420px; margin-top:-25px;">back</p>
             </a>
           </div>
@@ -258,10 +257,10 @@
           <div class="journey">
 
             <img src="pics/daliMoment-ourHeritage.png" style="margin-left:-380px; margin-top:50px;" />
-            <a href="#ourHeritage" class="panel">
+            <a href="#ourHeritage" class="panel" data-menu="us">
               <p style="margin-left:450px; margin-top:-440px;">next</p>
             </a>
-            <a href="#daliMoment" class="panel">
+            <a href="#daliMoment" class="panel" data-menu="dali">
               <p style="margin-left:-375px; margin-top:370px;">back</p>
             </a>
           </div>
@@ -322,11 +321,11 @@
           </div>
           <div class="journey">
             <img src="pics/tree.png" style="margin-left:720px; margin-top:-220px;">
-            <a href="#products" class="panel">
+            <a href="#products" class="panel" data-menu="your-dali">
               <p style="margin-left:500px; margin-top:-90px;">next</p>
             </a>
             <img src="pics/ourHeritage-products.png" style="margin-left:-325px; margin-top:10px;" />
-            <a href="#ourHeritage" class="panel">
+            <a href="#ourHeritage" class="panel" data-menu="us">
               <p style="margin-left:-335px; margin-top:-40px;">back</p>
             </a>
           </div>
@@ -452,10 +451,10 @@
             </div>
           </div>
           <div class="journey">
-            <a href="#contact" class="panel">
+            <a href="#contact" class="panel" data-menu="contact">
               <p style="margin-left:195px; margin-top:10px;">next</p>
             </a><img src="pics/products-contact.png" style="margin-left:200px;">
-            <a href="#products" class="panel">
+            <a href="#products" class="panel" data-menu="your-dali">
               <p style="margin-left:930px; margin-top:-155px;">back</p>
             </a></div>
         </div>

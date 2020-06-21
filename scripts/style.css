@@ -156,6 +156,9 @@ b {font-weight: bold;}
 	#menuLogo {
 		height: unset;
 	}
+	#welcome {
+		height: 100vh;
+	}
 	#welcome .content {
 	    height: 100vh;
 	    margin: unset;

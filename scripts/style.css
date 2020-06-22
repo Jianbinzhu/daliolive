@@ -175,15 +175,15 @@ video.video {
 	#welcome .content img{
 	    width: calc(100% - 40px);
 	    left: 65px;
-	    top: 14%;
+	    top: 13%;
 	    position: absolute;
 	    transform: translateY(-50%);
 	}
 	video.video {
 		position: absolute;
-		width: calc(100% - 130px);
-		left: 115px;
-		bottom: 12%;
+		width: calc(100% - 140px);
+		left: 120px;
+		bottom: 21%;
 		top: unset;
 	}
 	.content {
@@ -241,12 +241,13 @@ video.video {
 	}
 
 	#welcome p.start {
-		padding-left: 0;
-		margin-top: 0;
-		position: absolute;
-	    bottom: 5%;
-		left: 50%;
-		margin-bottom: 0;
+	    padding-left: 0;
+	    margin-top: 0;
+	    position: absolute;
+	    bottom: 18%;
+	    left: 30%;
+	    margin-bottom: 0;
+	    width: 100%;
 	}
 
 	.bx-wrapper .bx-pager {
